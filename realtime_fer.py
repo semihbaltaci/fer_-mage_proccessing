@@ -45,7 +45,7 @@ def main():
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
     # 3. Kamerayı başlat (0 numaralı indeks genellikle bilgisayarın ana kamerasıdır)
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     
     # Temporal Smoothing (Zaman Serisi Yumuşatması) için kuyruk
     # Son 3 tahmini saklayarak ani değişimleri engelleriz (Daha hızlı tepki için 3'e düşürüldü)
